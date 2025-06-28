@@ -30,107 +30,78 @@ import { testimonials } from '../../../commonData/data';
 const services = [
     {
         icon: AppDevelopmentIcon,
-        title: 'Web Development',
+        title: 'Hair Dressing',
         description: ['Custom websites and web applications'],
     },
     {
         icon: MobileDevelopmentIcon,
-        title: 'Application Development',
+        title: 'Hair Style',
         description: ['Mobile and Desktop applications'],
     },
     {
         icon: EducationIcon,
         title: 'Educational Services',
-        description: ['Coding classes for all ages'],
+        description: ['Hair make up classes for all ages'],
     },
 ];
 
 const featuredProjects = [
     {
-        title: 'Enterprise Resource Planning System',
+        title: 'Hair Extensions for Every Style and Texture',
         description: [
-            'An ERP system integrates business processes into a single system, improving efficiency and decision-making.',
-            'It provides real-time data and insights for better resource management.',
+            'we believe that every client deserves hair that reflects their individuality. That’s why we offer extensions in straight, wavy, and curly textures, ensuring that no matter your natural hair type, we’ve got you covered.',
         ],
     },
     {
-        title: 'Inventory Management System',
+        title: ' Embrace the Season with Style',
         description: [
-            'An Inventory Management System tracks and manages inventory levels, orders, sales, and deliveries.',
-            'It optimizes stock levels, reduces costs, and improves overall efficiency.',
+            ' Its time to refresh your look with the season’s hottest hair trends. From rich, warm tones to textured styles, this fall is all about embracing natural beauty and experimenting with bold changes.',
         ],
     },
     {
-        title: 'Insurance Claim Management System',
+        title: 'Your True Colors',
         description: [
-            'An Insurance Claim Management System streamlines the process of filing, tracking, and managing insurance claims.',
-            'It enhances efficiency, reduces errors, and improves customer satisfaction.',
+            'From natural colors to pastel hues our technicians can mix up almost anything! Then, follow it up with a fresh cut and style. You will leave here with vibrant hair and a plan to keep it vibrant between visits.',
         ],
     },
     {
-        title: 'Customer Relationship Management System',
+        title: 'Smooth Hair',
         description: [
-            'A Customer Relationship Management (CRM) system helps manage interactions with customers and prospects.',
-            'It improves customer service, boosts sales, and enhances customer retention.',
+            'If you love the sleek, frizz-free results of a Brazilian Blowout but have been hesitant due to concerns about harsh chemicals, we have exciting news! At Republic Hair Co., we’re now offering a formaldehyde-free Brazilian Blowout, delivering the same long-lasting smoothness, shine, and humidity resistance—without the risks of traditional formulas.',
         ],
     },
 ];
 
 const skills = [
     {
-        title: 'Programming Languages',
+        title: 'Technical Skills',
         description: [
-            'Expertise in multiple programming languages including JavaScript, TypeScript, Python',
+            'Hair cutting, Hair coloring. Hair styling (blow drying, curling, straightening, updos, Shampooing and conditioning, Hair treatments (deep conditioning, keratin, scalp treatment. ',
         ],
     },
     {
-        title: 'UI/UX Design',
-        description: ['Creating intuitive and responsive user interfaces'],
+        title: 'Interpersonal & Communication Skills',
+        description: [
+            'Listening actively to understand client requests, Explaining styles, treatments, and maintenance, Customer service (friendly, polite, welcoming attitude), Consultation skills (offering style advice based on face shape, hair type, etc) and Patience (especially with indecisive or difficult clients)',
+        ],
     },
     {
-        title: 'Application Development',
-        description: ['Full-stack development for web and mobile applications'],
-    },
-    {
-        title: 'Social Service Expertise',
-        description: ['Community engagement and social impact solutions'],
+        title: 'Creative & Personal Skills',
+        description: [
+            'Creativity and sense of aesthetics (style matching, trends), Attention to detail (precise cuts and color work), Confidence in decision-making and execution, Adaptability',
+        ],
     },
 ];
-
-const skillsData = {
-    labels: skills.map((skill) => skill.title),
-    datasets: [
-        {
-            label: 'Skill Level',
-            data: [90, 80, 85, 70], // Example skill levels
-            backgroundColor: [
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(255, 159, 64, 0.2)',
-                'rgba(255, 205, 86, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-            ],
-            borderColor: [
-                'rgba(75, 192, 192, 1)',
-                'rgba(255, 159, 64, 1)',
-                'rgba(255, 205, 86, 1)',
-                'rgba(54, 162, 235, 1)',
-            ],
-            borderWidth: 1,
-        },
-    ],
-};
 
 const HomeContent: React.FC = () => {
     return (
         <MainWrapper>
             <WallPaper $backgroundimage={WallPaperImage}>
                 <CompanyMoto>
-                    <h1>Empowering Ideas With Code</h1>
+                    <h1>Elevate your beauty, indulge in our expertise</h1>
                     <p>
-                        Crafting Websites, Applications, and Dreams Since March
-                        2023. Your trusted partner for web development,
-                        application solutions, business presence, and
-                        educational services.
+                        Transforming tresses with flair and care, one snip at a
+                        time! Your crowning glory awaits, step into style today!
                     </p>
                     <WallPaperButtons>
                         <Link to={'/portfolio'}>
@@ -143,15 +114,10 @@ const HomeContent: React.FC = () => {
                 </CompanyMoto>
             </WallPaper>
             <Section key={'about-us'}>
-                <SectionTitle>About AT Tech Solutions</SectionTitle>
+                <SectionTitle>About Haymi Beauty Salon</SectionTitle>
                 <p>
-                    Founded by passionate software engineers in March 2023,
-                    Dream Soft has rapidly evolved into a comprehensive
-                    technology solutions provider. Our expertise spans across
-                    web development, application creation, and social services.
-                    Our team combines extensive expertise in coding, teaching,
-                    and social services to deliver comprehensive solutions that
-                    make a real difference.
+                    Haircuts are like magic. They make the old you disappear and
+                    the new you appear.
                 </p>
                 <Link to={'/about'}>
                     <CustomButton>Meet the Team</CustomButton>
@@ -172,7 +138,7 @@ const HomeContent: React.FC = () => {
                 <Carousel items={skills} />
             </Section>
             <Section key={'featured-projects'}>
-                <SectionTitle>Featured Projects</SectionTitle>
+                <SectionTitle>Featured Styles</SectionTitle>
                 <p>Explore some of our recent work and success stories</p>
                 <ServicesGrid className="featured-projects">
                     {featuredProjects.map((project, index) => (
@@ -194,9 +160,9 @@ const HomeContent: React.FC = () => {
             <Section key="skill-knowledge">
                 <SectionTitle>Our Skills and Knowledge</SectionTitle>
                 <p>
-                    Our team combines extensive expertise in coding, teaching,
-                    and social services to deliver comprehensive solutions that
-                    make a real difference.
+                    Our team combines extensive expertise in beauty salon, Hair
+                    dressing, and make up to deliver quality that make a real
+                    difference.
                 </p>
                 <ServicesGrid>
                     {skills.map((skill, index) => (
@@ -209,7 +175,6 @@ const HomeContent: React.FC = () => {
                     ))}
                 </ServicesGrid>
                 <Carousel items={skills} />
-                <ChartComponent data={skillsData} />
             </Section>
             <Testimonials
                 testimonials={testimonials.map((testimonial) => ({

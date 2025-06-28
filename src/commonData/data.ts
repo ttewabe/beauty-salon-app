@@ -57,7 +57,7 @@ export const caseStudies = [
 
 export const projects = [
     {
-        name: 'E-commerce Platform Redesign',
+        name: 'Hair cutting Service',
         client: 'Global Retail Co.',
         description:
             'Complete overhaul of legacy e-commerce platform with modern technologies and improved UX',
@@ -67,7 +67,7 @@ export const projects = [
             '300% increase in conversion rate, 50% reduction in page load time',
     },
     {
-        name: 'Health Tracking Mobile App',
+        name: 'Hair coloring Service',
         client: 'HealthTech Solutions',
         description:
             'Comprehensive health and fitness tracking application with social features',
@@ -76,7 +76,7 @@ export const projects = [
         outcome: '1M+ downloads in first 6 months',
     },
     {
-        name: 'Coding Bootcamp Platform',
+        name: 'Hair styling ',
         client: 'TechEd Institute',
         description: 'Interactive learning platform for coding education',
         technologies: ['Vue.js', 'Django', 'PostgreSQL'],
@@ -84,7 +84,7 @@ export const projects = [
         outcome: '10,000+ students trained with 89% job placement rate',
     },
     {
-        name: 'Smart City IoT Dashboard',
+        name: 'Hair treatments ',
         client: 'Metropolitan Council',
         description:
             'Real-time monitoring and analytics dashboard for city infrastructure',

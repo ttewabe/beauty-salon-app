@@ -27,13 +27,13 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ setMenuDetailsOpen }) => {
                 <MenuDetailsTitle>Software Development</MenuDetailsTitle>
                 <MenuDetailsItemContent>
                     <MenuDetailsItemContentItem>
-                        Web Development
+                        Hair cutting
                     </MenuDetailsItemContentItem>
                     <MenuDetailsItemContentItem>
-                        Mobile Development
+                        Hair coloring
                     </MenuDetailsItemContentItem>
                     <MenuDetailsItemContentItem>
-                        Software Maintenance
+                        Hair treatments
                     </MenuDetailsItemContentItem>
                 </MenuDetailsItemContent>
             </MenuDetailsItem>
@@ -43,13 +43,13 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ setMenuDetailsOpen }) => {
                 <MenuDetailsTitle>Education Services</MenuDetailsTitle>
                 <MenuDetailsItemContent>
                     <MenuDetailsItemContentItem>
-                        Coding Tutorials
+                        Chemical Service
                     </MenuDetailsItemContentItem>
                     <MenuDetailsItemContentItem>
-                        Web Design and Development
+                        Shampooing and conditioning
                     </MenuDetailsItemContentItem>
                     <MenuDetailsItemContentItem>
-                        Fundamental Algorithms
+                        Hair styling
                     </MenuDetailsItemContentItem>
                 </MenuDetailsItemContent>
             </MenuDetailsItem>

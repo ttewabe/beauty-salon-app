@@ -59,8 +59,9 @@ const Services: React.FC = () => {
             <Section>
                 <SectionTitle>Our Services</SectionTitle>
                 <p>
-                    We offer a diverse set of services from software development
-                    to notary services to meet your needs:
+                    We provide a full range of professional hair care services
+                    designed to meet the unique needs and preferences of every
+                    client.:
                 </p>
                 <ImageContainer>
                     <img alt="img" src={ServicesImage} />
@@ -69,29 +70,33 @@ const Services: React.FC = () => {
 
             {/* Software Development Section */}
             <Section ref={softwareDevelopmentRef} id="software-development">
-                <SectionTitle>Software Development</SectionTitle>
+                <SectionTitle>Professional Hair Care Services</SectionTitle>
                 <div className="horizontal-container uneven left-bigger">
                     <ServiceList className="left">
                         <li>
                             <p>
-                                <b>Web Development: </b>
+                                <b>Haircuts & Styling: </b>
                             </p>{' '}
-                            Building responsive, user-friendly websites to
-                            enhance your online presence.
+                            Haircut & Style includes consultation, precision
+                            cut, blow-dry, and style.
                         </li>
                         <li>
                             <p>
-                                <b>Mobile Development: </b>
+                                <b>Hair Coloring Services: </b>
                             </p>{' '}
-                            Creating mobile applications for Android and iOS
-                            platforms.
+                            Root Touch-Up, full color one solid shade applied
+                            from root to tip, highlights/lowlights ,
+                            balayage/ombre, toner/gloss treatment and color
+                            correction.
                         </li>
                         <li>
                             <p>
-                                <b>Software Maintenance: </b>
+                                <b>Hair Treatments: </b>
                             </p>{' '}
-                            Ensuring your software remains up-to-date, secure,
-                            and fully functional.
+                            Deep Conditioning Treatment Restores moisture and
+                            strength, Scalp Treatment – Targets dryness,
+                            buildup, or irritation, Protein Rebuilding –
+                            Strengthens damaged or chemically treated hair.
                         </li>
                     </ServiceList>
                     <ImageContainerSmall className="right">
@@ -102,7 +107,7 @@ const Services: React.FC = () => {
 
             {/* Education Services Section */}
             <Section ref={educationServicesRef} id="education-services">
-                <SectionTitle>Education Services</SectionTitle>
+                <SectionTitle>Other Services</SectionTitle>
                 <div className="horizontal-container uneven right-bigger">
                     <ImageContainerSmall className="left">
                         <img alt="img" src={CodingEducation} />
@@ -110,57 +115,33 @@ const Services: React.FC = () => {
                     <ServiceList className="right">
                         <li>
                             <p>
-                                <b>Coding Tutorials: </b>
+                                <b>Texture & Chemical Services: </b>
                             </p>{' '}
-                            Offering tutorials to help you master different
-                            coding languages and frameworks.
+                            Perms adds curl or wave for lasting texture and
+                            volume. Relaxers straightens and softens coarse or
+                            curly hair.Japanese straightening advanced
+                            straightening for long-term sleek results (by
+                            consultation).
                         </li>
                         <li>
                             <p>
-                                <b>Web Design and Development: </b>
+                                <b>Add-On Services: </b>
                             </p>{' '}
-                            Crafting visually appealing and functional websites.
+                            Hair Consultation Discuss your goals and receive
+                            expert advice. Bang Trim Quick touch-up between full
+                            cuts. Beard Trim/Shaping For men looking for clean
+                            facial grooming.
                         </li>
                         <li>
                             <p>
-                                <b>Fundamental Algorithms: </b>
+                                <b>Retail Products: </b>
                             </p>{' '}
-                            Implementing essential algorithms to optimize your
-                            software solutions.
+                            We carry a curated selection of professional salon
+                            products to maintain your look at home.Shampoos &
+                            conditioners, Styling creams, sprays & serums and
+                            Heat protection & treatments.
                         </li>
                     </ServiceList>
-                </div>
-            </Section>
-
-            {/* Other Services Section */}
-            <Section ref={otherServicesRef} id="other-services">
-                <SectionTitle>Other Services</SectionTitle>
-                <div className="horizontal-container uneven left-bigger">
-                    <ServiceList className="left">
-                        <li>
-                            <p>
-                                <b>USIS Form: </b>
-                            </p>{' '}
-                            Assistance with completing USIS forms accurately.
-                        </li>
-                        <li>
-                            <p>
-                                <b>US Citizenship Form: </b>
-                            </p>{' '}
-                            Guidance and support for US citizenship
-                            applications.
-                        </li>
-                        <li>
-                            <p>
-                                <b>Notary Services: </b>
-                            </p>{' '}
-                            Providing certified notary services for your
-                            important documents.
-                        </li>
-                    </ServiceList>
-                    <ImageContainerSmall className="right">
-                        <img alt="img" src={OtherServices} />
-                    </ImageContainerSmall>
                 </div>
             </Section>
         </MainWrapper>

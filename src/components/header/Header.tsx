@@ -31,11 +31,11 @@ export const Header: React.FC = () => {
 
     return (
         <HeaderContainer onMouseLeave={() => setMenuDetailsOpen(false)}>
-            <Logo>AT Tech</Logo>
+            <Logo>Haymi Salon</Logo>
             <HeaderMainLine>
                 <ContactInfo>
                     <span>Contact: +1-123-456-7890</span>
-                    <span>Email: info@attechsolution.com</span>
+                    <span>Email: info@haymibeautysalon.com</span>
                 </ContactInfo>
                 <HeaderDetails>
                     <HeaderNavitems>

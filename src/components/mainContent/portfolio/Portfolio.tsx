@@ -12,7 +12,6 @@ import { StatCard } from '../../statCard/StatCard';
 
 import {
     projects,
-    caseStudies,
     stats,
     testimonials,
     awards,
@@ -23,66 +22,11 @@ import MobileDevelopmentIcon from '../../../assets/mobile-development-icon.jpg';
 import EducationIcon from '../../../assets/education-icon.png';
 import SocialIcon from '../../../assets/social-icon.png';
 
-import { FaCode, FaChartLine } from 'react-icons/fa6';
 import { Carousel } from '../../carousel/Carousel';
 
 const Portfolio: React.FC = () => {
     return (
         <MainWrapper>
-            <Section id="projects" className="projects">
-                <SectionTitle>Project Highlights</SectionTitle>
-                <ProjectGrid>
-                    {projects.map((project, index) => (
-                        <Card>
-                            <Card className="title-card" key={index}>
-                                <h3>{project.name}</h3>
-                            </Card>
-                            <p className="client">Client: {project.client}</p>
-                            <p className="description">{project.description}</p>
-                            <div className="technologies">
-                                {project.technologies.map((tech) => (
-                                    <>
-                                        <span className="tag">
-                                            <FaCode /> {tech}
-                                        </span>
-                                    </>
-                                ))}
-                            </div>
-                            <p className="outcome">
-                                <>
-                                    <FaChartLine /> {project.outcome}
-                                </>
-                            </p>
-                        </Card>
-                    ))}
-                </ProjectGrid>
-            </Section>
-
-            <Section id="case-studies" className="case-studies">
-                <div className="vertical-container">
-                    <SectionTitle>Case Studies</SectionTitle>
-                    {caseStudies.map((caseStudy) => (
-                        <Card>
-                            <h3>{caseStudy.title}</h3>
-                            <div className="left-align">
-                                <p>
-                                    <b>Problem</b>
-                                </p>
-                                <p>{caseStudy.problem}</p>
-                                <p>
-                                    <b>Solution</b>
-                                </p>
-                                <p>{caseStudy.solution}</p>
-                                <p>
-                                    <b>Results</b>
-                                </p>
-                                <p>{caseStudy.results}</p>
-                            </div>
-                        </Card>
-                    ))}
-                </div>
-            </Section>
-
             <Section id="services" className="services">
                 <SectionTitle>Our Services</SectionTitle>
                 <ProjectGrid>
@@ -90,7 +34,7 @@ const Portfolio: React.FC = () => {
                         <CardIcon>
                             <img alt="" src={WebDevelopmentIcon} />
                         </CardIcon>
-                        <h3>Web Development</h3>
+                        <h3>Hair Cutting Service</h3>
                         <div className="service-examples" id="webExamples">
                             {projects[0].name}
                         </div>
@@ -99,7 +43,7 @@ const Portfolio: React.FC = () => {
                         <CardIcon>
                             <img alt="" src={MobileDevelopmentIcon} />
                         </CardIcon>
-                        <h3>Mobile Development</h3>
+                        <h3>Hair Coloring</h3>
                         <div className="service-examples" id="mobileExamples">
                             {projects[1].name}
                         </div>
@@ -108,7 +52,7 @@ const Portfolio: React.FC = () => {
                         <CardIcon>
                             <img alt="" src={EducationIcon} />
                         </CardIcon>
-                        <h3>Coding Education</h3>
+                        <h3>Hair Treatment</h3>
                         <div
                             className="service-examples"
                             id="educationExamples"
@@ -122,7 +66,7 @@ const Portfolio: React.FC = () => {
                         </CardIcon>
                         <h3>Other Services</h3>
                         <div className="service-examples" id="otherExamples">
-                            Notary Services
+                            Shampooing and conditioning
                         </div>
                     </Card>
                 </ProjectGrid>

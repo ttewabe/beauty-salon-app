@@ -77,7 +77,7 @@ const SlideDrawer: React.FC<{
                     </CloseButton>
                 </OneLineContainer>
                 <DropdownLogoContainer>
-                    <Logo>AT Tech</Logo>
+                    <Logo>Haymi Salon</Logo>
                 </DropdownLogoContainer>
                 <DropdownContentContainer>
                     <DropdownList className="services-nav">

@@ -13,11 +13,10 @@ const sectionContents = [
         title: 'Company Overview',
         content: (
             <SectionContentP>
-                We are a company dedicated to helping people achieve their goals
-                and dreams through technology. Our mission is to empower ideas
-                with code, offering a range of services including application
-                and web development, coding training, and various social
-                services.
+                Haymi Salon is an upscale salon in Lavon. It is a community of
+                educated and driven stylists dedicated to the craft, inclusion,
+                innovation, and empowerment of each guest that walks through the
+                door.
             </SectionContentP>
         ),
     },
@@ -25,36 +24,14 @@ const sectionContents = [
         title: 'Company History',
         content: (
             <SectionContentP>
-                Tewabe and Abenezer founded the company with a shared vision of
-                harnessing the power of technology to transform lives. They
-                started the company to offer application and web development,
-                coding training, and essential social services such as
-                citizenship forms, USIS forms, and notary services.
-            </SectionContentP>
-        ),
-    },
-    {
-        title: 'Core Values',
-        content: (
-            <SectionContentDiv>
-                <ul>
-                    <li>Innovation</li>
-                    <li>Integrity</li>
-                    <li>Customer-Centricity</li>
-                    <li>Collaboration</li>
-                    <li>Excellence</li>
-                </ul>
-            </SectionContentDiv>
-        ),
-    },
-    {
-        title: 'Team Introduction',
-        content: (
-            <SectionContentP>
-                The company currently consists of two members: Tewabe and
-                Abenezer. Tewabe is in charge, and they bring diverse
-                perspectives and experiences from different countries, enriching
-                the company's approach to problem-solving and innovation.
+                Founded in 2023, Haymi Beauty Salon began as a small
+                neighborhood salon with a passion for personalized hair care and
+                creative styling. Over the years, it has grown into a trusted
+                brand known for its skilled stylists, modern techniques, and
+                commitment to customer satisfaction. With a focus on innovation
+                and continued education, Luxe Hair Studio has become a go-to
+                destination for clients seeking both classic and contemporary
+                looks.
             </SectionContentP>
         ),
     },
@@ -64,36 +41,23 @@ const sectionContents = [
             <SectionContentDiv>
                 We offer a range of services, including:
                 <ul>
-                    <li>Application and Web Development</li>
-                    <li>Coding Training</li>
+                    <li>Hair cutting</li>
+                    <li>Hair coloring</li>
                     <li>
-                        Social Services (citizenship forms, USIS forms, notary
-                        services)
+                        Hair styling (blow drying, curling, straightening,
+                        updos)
+                    </li>
+                    <li>Shampooing and conditioning</li>
+                    <li>
+                        Hair treatments (deep conditioning, keratin, scalp
+                        treatments)
+                    </li>
+                    <li>
+                        Chemical services (perms, relaxers, straightening
+                        systems)
                     </li>
                 </ul>
             </SectionContentDiv>
-        ),
-    },
-    {
-        title: 'Corporate Social Responsibility',
-        content: (
-            <SectionContentP>
-                [Share how our company contributes to the community and the
-                causes we support. like basic tech education and training and
-                social services]
-            </SectionContentP>
-        ),
-    },
-    {
-        title: 'Contact Information',
-        content: (
-            <ContactInfo>
-                You can reach us via email or phone number:
-                <ul>
-                    <li>Email: info@attechsolution.com</li>
-                    <li>Phone: +1-123-456-7890</li>
-                </ul>
-            </ContactInfo>
         ),
     },
 ];

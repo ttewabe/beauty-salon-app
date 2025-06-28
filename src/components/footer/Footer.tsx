@@ -40,7 +40,7 @@ const Footer: React.FC = () => {
                     </FooterElements>
                 </FooterMain>
                 <FooterBottom>
-                    <p>© 2024 AT Tech. All rights reserved.</p>
+                    <p>© 2024 Haymi Beauty Salon. All rights reserved.</p>
                 </FooterBottom>
             </FooterContent>
         </FooterContainer>
