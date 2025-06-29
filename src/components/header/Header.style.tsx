@@ -5,8 +5,8 @@ export const HeaderContainer = styled.header`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #003366;
-    color: white;
+    background-color: rgb(242 177 211 / 24%);
+    color: Black;
     padding: 0.4rem 0.8rem 1.2rem 1.2rem;
     overflow-x: hidden;
 `;
@@ -52,7 +52,7 @@ export const HeaderNavitems = styled.div`
 
         a {
             text-decoration: none;
-            color: white;
+            color: Black;
         }
 
         &.active {
@@ -98,7 +98,7 @@ export const HamburgerContainer = styled.div`
 export const HamburgerButton = styled.button`
     background: none;
     border: none;
-    color: white;
+    color: Black;
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;

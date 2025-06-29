@@ -90,13 +90,13 @@ export const FooterElements = styled.div`
     button {
         padding: 10px;
         border: 0.2px solid #999;
-        background-color: #003366;
+        background-color: rgb(245, 131, 190);
         color: #fff;
         border-radius: 5px;
         width: 120px;
-
         &:hover {
-            background-color: #114477;
+            background-color: rgb(242, 177, 211);
+            color: rgb(1, 1, 1);
             scale: 1.05;
         }
     }

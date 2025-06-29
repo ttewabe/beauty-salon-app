@@ -68,13 +68,14 @@ export const SubmitButton = styled.button`
     padding: 1rem 2rem;
     border-radius: 20px;
     border: none;
-    background-color: #003366;
+    background-color: rgb(245, 131, 190);
     color: #fff;
     font-size: 1.2rem;
     cursor: pointer;
     transition: all 0.3s ease;
     &:hover {
-        background-color: #000;
+        background-color: rgb(242, 177, 211);
+        color: rgb(1, 1, 1);
         color: #ffffff;
     }
 `;

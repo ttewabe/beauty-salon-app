@@ -80,7 +80,7 @@ export const Carousel: React.FC<CarouselProps> = ({
                             ))}
                             {showButton && (
                                 <CardLink>
-                                    View Project <FaAngleRight />
+                                    View Hair wprks <FaAngleRight />
                                 </CardLink>
                             )}
                             {item.image && (

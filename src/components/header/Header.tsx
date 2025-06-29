@@ -53,12 +53,6 @@ export const Header: React.FC = () => {
                             <FaAngleDown />
                         </span>
                         <span
-                            className={isActive('/portfolio') ? 'active' : ''}
-                            onMouseEnter={() => setMenuDetailsOpen(false)}
-                        >
-                            <Link to="/portfolio">Portfolio</Link>
-                        </span>
-                        <span
                             className={isActive('/about') ? 'active' : ''}
                             onMouseEnter={() => setMenuDetailsOpen(false)}
                         >

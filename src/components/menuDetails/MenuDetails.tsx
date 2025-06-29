@@ -24,7 +24,7 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ setMenuDetailsOpen }) => {
             <MenuDetailsItem
                 onClick={() => navigateToSection('#software-development')}
             >
-                <MenuDetailsTitle>Software Development</MenuDetailsTitle>
+                <MenuDetailsTitle>Hair Styles</MenuDetailsTitle>
                 <MenuDetailsItemContent>
                     <MenuDetailsItemContentItem>
                         Hair cutting
@@ -40,7 +40,7 @@ const MenuDetails: React.FC<MenuDetailsProps> = ({ setMenuDetailsOpen }) => {
             <MenuDetailsItem
                 onClick={() => navigateToSection('#education-services')}
             >
-                <MenuDetailsTitle>Education Services</MenuDetailsTitle>
+                <MenuDetailsTitle>Training Services</MenuDetailsTitle>
                 <MenuDetailsItemContent>
                     <MenuDetailsItemContentItem>
                         Chemical Service

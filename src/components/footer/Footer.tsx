@@ -17,7 +17,6 @@ const Footer: React.FC = () => {
                             <h4>Quick Links</h4>
                             <ul>
                                 <li>Services</li>
-                                <li>Portfolio</li>
                                 <li>About</li>
                                 <li>Contact</li>
                             </ul>

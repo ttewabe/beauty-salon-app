@@ -28,14 +28,13 @@ import {
 import { FaXmark, FaEnvelope } from 'react-icons/fa6';
 
 const services = [
-    { title: 'Website Development', link: 'software-development' },
-    { title: 'Application Development', link: 'software-development' },
-    { title: 'Software Maintenance', link: 'software-development' },
-    { title: 'Teaching Coding', link: 'education-services' },
-    { title: 'Social Services', link: 'other-services' },
+    { title: 'Hair Care Services', link: 'software-development' },
+    { title: 'Texture & Chemical Services', link: 'software-development' },
+    { title: 'Other Services', link: 'software-development' },
+    { title: 'Teaching', link: 'education-services' },
 ];
 
-const navItems = ['Home', 'Services', 'Portfolio', 'About', 'Contact Us'];
+const navItems = ['Home', 'Services', 'About', 'Contact Us'];
 
 const socialMediaIcons = [
     { Icon: FaFacebook, size: 20 },

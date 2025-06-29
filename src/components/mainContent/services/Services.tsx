@@ -12,7 +12,6 @@ import {
 import ServicesImage from '../../../assets/services.jpg';
 import CodingEducation from '../../../assets/coding-education.jpg';
 import SoftwareDevelopment from '../../../assets/software-development.jpg';
-import OtherServices from '../../../assets/other-services.jpg';
 import { useLocation } from 'react-router-dom';
 
 const Services: React.FC = () => {
@@ -105,7 +104,6 @@ const Services: React.FC = () => {
                 </div>
             </Section>
 
-            {/* Education Services Section */}
             <Section ref={educationServicesRef} id="education-services">
                 <SectionTitle>Other Services</SectionTitle>
                 <div className="horizontal-container uneven right-bigger">

@@ -18,29 +18,28 @@ import {
 } from '../../commonStyledComponents/CommonStyledComponents.style';
 
 import WallPaperImage from '../../../assets/wallpaper.jpg';
-import EducationIcon from '../../../assets/education-icon.png';
-import AppDevelopmentIcon from '../../../assets/app-development-icon.png';
-import MobileDevelopmentIcon from '../../../assets/mobile-development-icon.jpg';
+import Training from '../../../assets/education-icon.png';
+import HairDressingIcon from '../../../assets/hair-dressing.jpg';
+import HairStyleIcon from '../../../assets/hair-style.jpg';
 import { FaAngleRight } from 'react-icons/fa';
-import ChartComponent from '../../charts/ChartComponent';
 import { Carousel } from '../../carousel/Carousel';
 import { Testimonials } from '../../testimonials/Testimonials';
 import { testimonials } from '../../../commonData/data';
 
 const services = [
     {
-        icon: AppDevelopmentIcon,
-        title: 'Hair Dressing',
-        description: ['Custom websites and web applications'],
+        icon: HairStyleIcon,
+        title: 'Hair Braids $ Styles',
+        description: ['Women’s braids and styles'],
     },
     {
-        icon: MobileDevelopmentIcon,
-        title: 'Hair Style',
-        description: ['Mobile and Desktop applications'],
+        icon: HairDressingIcon,
+        title: 'Hair Dressing and Color',
+        description: ['Ethiopian hair dressing styles'],
     },
     {
-        icon: EducationIcon,
-        title: 'Educational Services',
+        icon: Training,
+        title: 'Hair make up Services',
         description: ['Hair make up classes for all ages'],
     },
 ];
@@ -104,9 +103,6 @@ const HomeContent: React.FC = () => {
                         time! Your crowning glory awaits, step into style today!
                     </p>
                     <WallPaperButtons>
-                        <Link to={'/portfolio'}>
-                            <CustomButton>View Portfolio</CustomButton>
-                        </Link>
                         <Link to={'/contact'}>
                             <CustomButton>Contact Us</CustomButton>
                         </Link>
@@ -150,7 +146,7 @@ const HomeContent: React.FC = () => {
                                 <p key={i}>{desc}</p>
                             ))}
                             <CardLink>
-                                View Project <FaAngleRight />
+                                View Hair Works <FaAngleRight />
                             </CardLink>
                         </Card>
                     ))}

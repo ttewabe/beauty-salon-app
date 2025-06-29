@@ -85,11 +85,10 @@ export const Card = styled.div`
     box-sizing: border-box;
     align-items: center;
     background: var(--darker);
-    padding: 2rem 3.5rem 3rem 3.5rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    border: 1px solid #b8860b;
+    border: 1px solid rgb(245, 131, 190);
     position: relative;
     overflow: hidden;
 
