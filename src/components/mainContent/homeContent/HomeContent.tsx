@@ -18,7 +18,7 @@ import {
 } from '../../commonStyledComponents/CommonStyledComponents.style';
 
 import WallPaperImage from '../../../assets/wallpaper.jpg';
-import Training from '../../../assets/education-icon.png';
+import HairTreatmentIcon from '../../../assets/hair-treatment.jpg';
 import HairDressingIcon from '../../../assets/hair-dressing.jpg';
 import HairStyleIcon from '../../../assets/hair-style.jpg';
 import { FaAngleRight } from 'react-icons/fa';
@@ -29,7 +29,7 @@ import { testimonials } from '../../../commonData/data';
 const services = [
     {
         icon: HairStyleIcon,
-        title: 'Hair Braids $ Styles',
+        title: 'Hair Braids and Styles',
         description: ['Women’s braids and styles'],
     },
     {
@@ -38,7 +38,7 @@ const services = [
         description: ['Ethiopian hair dressing styles'],
     },
     {
-        icon: Training,
+        icon: HairTreatmentIcon,
         title: 'Hair make up Services',
         description: ['Hair make up classes for all ages'],
     },
@@ -116,42 +116,44 @@ const HomeContent: React.FC = () => {
                     the new you appear.
                 </p>
                 <Link to={'/about'}>
-                    <CustomButton>Meet the Team</CustomButton>
+                    <CustomButton>Register Here</CustomButton>
                 </Link>
                 <ServicesGrid>
                     {services.map((service, index) => (
                         <Card key={index}>
-                            <CardIcon>
-                                <img alt="" src={service.icon} />
-                            </CardIcon>
-                            <h4>{service.title}</h4>
-                            {service.description.map((desc) => (
-                                <p key={desc}>{desc}</p>
-                            ))}
+                            <img src={service.icon} alt={service.title} />
+                            <div className="card-content">
+                                <h4>{service.title}</h4>
+                                {service.description.map((desc) => (
+                                    <p key={desc}>{desc}</p>
+                                ))}
+                            </div>
                         </Card>
                     ))}
                 </ServicesGrid>
-                <Carousel items={skills} />
             </Section>
             <Section key={'featured-projects'}>
                 <SectionTitle>Featured Styles</SectionTitle>
                 <p>Explore some of our recent work and success stories</p>
                 <ServicesGrid className="featured-projects">
                     {featuredProjects.map((project, index) => (
-                        <Card key={index} className="featured-project-card">
-                            <Card className="title-card">
+                        <Card key={index} className="hover-card">
+                            <CardIcon>
+                                {/* Replace with actual icons if available */}
+                                <img alt="" src={HairStyleIcon} />
+                            </CardIcon>
+                            <div className="card-content">
                                 <h4>{project.title}</h4>
-                            </Card>
-                            {project.description.map((desc, i) => (
-                                <p key={i}>{desc}</p>
-                            ))}
-                            <CardLink>
-                                View Hair Works <FaAngleRight />
-                            </CardLink>
+                                {project.description.map((desc, i) => (
+                                    <p key={i}>{desc}</p>
+                                ))}
+                                <CardLink>
+                                    View Hair Works <FaAngleRight />
+                                </CardLink>
+                            </div>
                         </Card>
                     ))}
                 </ServicesGrid>
-                <Carousel items={featuredProjects} />
             </Section>
             <Section key="skill-knowledge">
                 <SectionTitle>Our Skills and Knowledge</SectionTitle>
@@ -170,7 +172,6 @@ const HomeContent: React.FC = () => {
                         </Card>
                     ))}
                 </ServicesGrid>
-                <Carousel items={skills} />
             </Section>
             <Testimonials
                 testimonials={testimonials.map((testimonial) => ({

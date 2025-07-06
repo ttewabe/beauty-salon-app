@@ -1,12 +1,12 @@
 import React from 'react';
-import AuthenticatedApp from './AuthenticatedApp';
+import { AppRouter } from './AppRouter';
 import { Route, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
         <div className="App">
             <Routes>
-                <Route path="/*" element={<AuthenticatedApp />} />
+                <Route path="/*" element={<AppRouter />} />
             </Routes>
         </div>
     );

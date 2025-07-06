@@ -1,5 +1,5 @@
 import React from 'react';
-import { SectionContentP, SectionContentDiv, ContactInfo } from './About.style';
+import { SectionContentP } from './About.style';
 import {
     MainWrapper,
     Section,
@@ -10,59 +10,16 @@ import { testimonials } from '../../../commonData/data';
 
 const sectionContents = [
     {
-        title: 'Company Overview',
+        title: 'About Haymi Salon',
         content: (
             <SectionContentP>
-                Haymi Salon is an upscale salon in Lavon. It is a community of
-                educated and driven stylists dedicated to the craft, inclusion,
-                innovation, and empowerment of each guest that walks through the
-                door.
+                Founded in 2023 and located in Lavon, Haymi Beauty Salon proudly serves clients throughout the Lavon and Wylie areas. What began as a small neighborhood salon with a passion for personalized hair care and creative styling has grown into a trusted destination for quality beauty services.<br /><br />We offer a full range of professional hair services, including braiding, cutting, coloring, styling, shampooing and conditioning, hair treatments, and chemical services. Whether you visit us at the salon or take advantage of our convenient home-to-home service, our mission is to help you look and feel your absolute best.
             </SectionContentP>
         ),
-    },
-    {
-        title: 'Company History',
-        content: (
-            <SectionContentP>
-                Founded in 2023, Haymi Beauty Salon began as a small
-                neighborhood salon with a passion for personalized hair care and
-                creative styling. Over the years, it has grown into a trusted
-                brand known for its skilled stylists, modern techniques, and
-                commitment to customer satisfaction. With a focus on innovation
-                and continued education, Luxe Hair Studio has become a go-to
-                destination for clients seeking both classic and contemporary
-                looks.
-            </SectionContentP>
-        ),
-    },
-    {
-        title: 'Services and Expertise',
-        content: (
-            <SectionContentDiv>
-                We offer a range of services, including:
-                <ul>
-                    <li>Hair cutting</li>
-                    <li>Hair coloring</li>
-                    <li>
-                        Hair styling (blow drying, curling, straightening,
-                        updos)
-                    </li>
-                    <li>Shampooing and conditioning</li>
-                    <li>
-                        Hair treatments (deep conditioning, keratin, scalp
-                        treatments)
-                    </li>
-                    <li>
-                        Chemical services (perms, relaxers, straightening
-                        systems)
-                    </li>
-                </ul>
-            </SectionContentDiv>
-        ),
-    },
+    }
 ];
 
-const About: React.FC = () => {
+export const About: React.FC = () => {
     return (
         <MainWrapper>
             {sectionContents.map((section, index) => (
@@ -81,5 +38,3 @@ const About: React.FC = () => {
         </MainWrapper>
     );
 };
-
-export default About;

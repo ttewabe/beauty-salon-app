@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderContainer = styled.header`
     display: flex;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -37,15 +38,13 @@ export const HeaderDetails = styled.div`
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    gap: 15px;
+    gap: 20px;
 `;
 
 export const HeaderNavitems = styled.div`
     display: flex;
-    gap: 80px;
+    gap: 20px;
     justify-content: space-between;
-    margin-right: 20%;
-
     span {
         cursor: pointer;
         min-width: max-content;
@@ -69,6 +68,9 @@ export const HeaderNavitems = styled.div`
     @media (max-width: 768px) {
         display: none;
     }
+        .register-button{
+        right:0;
+        }
 `;
 
 export const ContactInfo = styled.div`
@@ -93,6 +95,10 @@ export const ContactInfo = styled.div`
 
 export const HamburgerContainer = styled.div`
     position: relative;
+    didplay: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 `;
 
 export const HamburgerButton = styled.button`
@@ -260,3 +266,22 @@ export const DropdownMenu = styled.div`
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 `;
+
+// Header Register Button
+export const BookNowButton = styled.button`
+width: auto;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(245, 131, 190);
+    color: #fff;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+`;              

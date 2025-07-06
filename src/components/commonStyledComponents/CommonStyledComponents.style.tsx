@@ -79,70 +79,64 @@ export const SectionTitle = styled.h1`
     }
 `;
 
+// Card content 
 export const Card = styled.div`
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    background: var(--darker);
-    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Square card, adjust as needed */
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border: 1px solid rgb(245, 131, 190);
-    position: relative;
-    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 
-    .title-card {
-        margin-top: 0;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        min-height: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        transform: translateY(-5px);
     }
 
-    .center-align {
-        text-align: center;
+    /* Full-size background image (icon) */
+    img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.3s ease;
+        z-index: 0;
+    }
+
+    /* Overlay content */
+    .card-content {
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.65);
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        padding: 1rem;
+        text-align: center;
+
+        h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 14px;
+        }
     }
 
-    .left-align {
-        text-align: left;
-        width: 100%;
-    }
-
-    img {
-        max-width: 75%;
-    }
-
-    h4 {
-        margin: 0;
-        padding: 0;
-    }
-
-    h3 {
-        margin: 0;
-        padding: 0;
-    }
-
-    p {
-        font-size: 14px;
-        width: 100%;
-    }
-
-    .tag {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        margin: 0.25rem;
-        background: #dddddd;
-        border-radius: 20px;
-        font-size: 0.9rem;
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    .tag:hover {
-        background: #eeeeee;
-        transform: scale(1.05);
+    &:hover .card-content {
+        opacity: 1;
     }
 `;
 

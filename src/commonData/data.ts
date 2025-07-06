@@ -58,7 +58,7 @@ export const caseStudies = [
 export const projects = [
     {
         name: 'Hair cutting Service',
-        client: 'Global Retail Co.',
+        client: 'Neighborhood.',
         description:
             'Complete overhaul of legacy e-commerce platform with modern technologies and improved UX',
         technologies: ['React', 'Node.js', 'MongoDB', 'AWS'],
@@ -68,12 +68,12 @@ export const projects = [
     },
     {
         name: 'Hair coloring Service',
-        client: 'HealthTech Solutions',
+        client: 'Neighborhood',
         description:
             'Comprehensive health and fitness tracking application with social features',
         technologies: ['Dying', 'Chemical Treatment'],
         category: 'beauty',
-        outcome: '1M+ downloads in first 6 months',
+        outcome: '1K+ downloads in first 6 months',
     },
     {
         name: 'Hair styling ',
@@ -81,11 +81,11 @@ export const projects = [
         description: 'Interactive learning platform for beauty education',
         technologies: ['Braids', 'Dressing', 'Treatment'],
         category: 'education',
-        outcome: '10,000+ students trained with 89% job placement rate',
+        outcome: '100+ students trained with 89% job placement rate',
     },
     {
         name: 'Hair treatments ',
-        client: 'Metropolitan Council',
+        client: 'Ethiopian Community',
         description:
             'Real-time monitoring and analytics dashboard for city infrastructure',
         technologies: ['Angular', 'Python', 'TensorFlow', 'IoT'],

@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import {
     HeaderContainer,
     Logo,
-    ContactInfo,
     HamburgerContainer,
     HamburgerButton,
     HeaderDetails,
     HeaderNavitems,
     HeaderMainLine,
+    BookNowButton,
 } from './Header.style';
 import SlideDrawer from '../slideDrawer/SlideDrawer';
 import MenuDetails from '../menuDetails/MenuDetails';
@@ -33,10 +33,6 @@ export const Header: React.FC = () => {
         <HeaderContainer onMouseLeave={() => setMenuDetailsOpen(false)}>
             <Logo>Haymi Salon</Logo>
             <HeaderMainLine>
-                <ContactInfo>
-                    <span>Contact: +1-123-456-7890</span>
-                    <span>Email: info@haymibeautysalon.com</span>
-                </ContactInfo>
                 <HeaderDetails>
                     <HeaderNavitems>
                         <span
@@ -68,6 +64,11 @@ export const Header: React.FC = () => {
                 </HeaderDetails>
             </HeaderMainLine>
             <HamburgerContainer onBlur={handleBlur} tabIndex={-1}>
+                <BookNowButton>
+                    <Link to={'/about'} style={{ textDecoration: 'none' }}>
+                        Book Now
+                    </Link>
+                </BookNowButton>
                 <HamburgerButton onClick={toggleMenu}>☰</HamburgerButton>
                 {isMenuOpen && <SlideDrawer setMenuOpen={setMenuOpen} />}
             </HamburgerContainer>

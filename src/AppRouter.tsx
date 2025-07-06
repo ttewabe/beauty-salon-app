@@ -4,9 +4,9 @@ import HeaderProvider from './components/headerFooterProvider/HeaderFooterProvid
 import HomeContent from './components/mainContent/homeContent/HomeContent';
 import Services from './components/mainContent/services/Services';
 import Contact from './components/mainContent/contact/Contact';
-import About from './components/mainContent/about/About';
+import { About } from './components/mainContent/about/About';
 
-const AuthenticatedApp: React.FC = () => {
+export const AppRouter: React.FC = () => {
     return (
         <Routes>
             <Route path="" element={<HeaderProvider />}>
@@ -20,4 +20,3 @@ const AuthenticatedApp: React.FC = () => {
     );
 };
 
-export default AuthenticatedApp;
