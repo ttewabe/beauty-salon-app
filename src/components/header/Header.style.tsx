@@ -95,10 +95,20 @@ export const ContactInfo = styled.div`
 
 export const HamburgerContainer = styled.div`
     position: relative;
-    didplay: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    // Show only on screens up to 768px
+         @media (min-width: 768px) {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        margin-right: auto;
+        margin-left: 0;
+    }
 `;
 
 export const HamburgerButton = styled.button`
@@ -244,7 +254,7 @@ export const ContactListContent = styled.div`
 export const DropdownMenu = styled.div`
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     color: black;
     background: white;
     box-sizing: border-box;
@@ -266,22 +276,3 @@ export const DropdownMenu = styled.div`
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
 `;
-
-// Header Register Button
-export const BookNowButton = styled.button`
-width: auto;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    background-color: rgb(245, 131, 190);
-    color: #fff;
-    cursor: pointer;
-
-    &:hover {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-    }
-`;              

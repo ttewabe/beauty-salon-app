@@ -7,7 +7,6 @@ import {
     HeaderDetails,
     HeaderNavitems,
     HeaderMainLine,
-    BookNowButton,
 } from './Header.style';
 import SlideDrawer from '../slideDrawer/SlideDrawer';
 import MenuDetails from '../menuDetails/MenuDetails';
@@ -31,6 +30,13 @@ export const Header: React.FC = () => {
 
     return (
         <HeaderContainer onMouseLeave={() => setMenuDetailsOpen(false)}>
+            <HamburgerContainer onBlur={handleBlur} tabIndex={-1}>
+                <HamburgerButton onClick={toggleMenu}>☰</HamburgerButton>
+                {isMenuOpen && <SlideDrawer setMenuOpen={setMenuOpen} />}
+            </HamburgerContainer>
+            {isMenuDetailsOpen && (
+                <MenuDetails setMenuDetailsOpen={setMenuDetailsOpen} />
+            )}
             <Logo>Haymi Salon</Logo>
             <HeaderMainLine>
                 <HeaderDetails>
@@ -63,18 +69,6 @@ export const Header: React.FC = () => {
                     </HeaderNavitems>
                 </HeaderDetails>
             </HeaderMainLine>
-            <HamburgerContainer onBlur={handleBlur} tabIndex={-1}>
-                <BookNowButton>
-                    <Link to={'/about'} style={{ textDecoration: 'none' }}>
-                        Book Now
-                    </Link>
-                </BookNowButton>
-                <HamburgerButton onClick={toggleMenu}>☰</HamburgerButton>
-                {isMenuOpen && <SlideDrawer setMenuOpen={setMenuOpen} />}
-            </HamburgerContainer>
-            {isMenuDetailsOpen && (
-                <MenuDetails setMenuDetailsOpen={setMenuDetailsOpen} />
-            )}
         </HeaderContainer>
     );
 };
